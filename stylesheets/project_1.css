@@ -10,6 +10,11 @@ p, h4, li{
     color: #666;
 }
 
+.left_border{
+    border-left: 5px solid #5aff00;
+    padding-left: 10px;
+}
+
 .introduction {
     .title{
       display: flex;
@@ -48,6 +53,10 @@ p, h4, li{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    section{
+        border-left: 5px solid #5aff00;
+        padding-left: 10px;
+    }
 }
 
 .sub_container{
@@ -120,6 +129,25 @@ p, h4, li{
                 object-fit: cover;
             }
         }
+        .sub_needfinding_2{
+            .flex_content{
+                margin: 0px 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            p{
+                margin: 10px;
+            }
+    
+            img{
+                width: 20%;
+                aspect-ratio: 1 / 2;
+                object-fit: cover;
+            }
+        }
         h3 {
             color: #555;
             border-bottom: 2px solid #ddd;
@@ -181,6 +209,13 @@ p, h4, li{
             max-width: 600px;
             aspect-ratio: auto;
             margin: 0 auto;
+        }
+
+        .two_column_container{
+            display: flex;
+            .two_column{
+                margin: 0px 10px;
+            }
         }
     }
     h3 {
