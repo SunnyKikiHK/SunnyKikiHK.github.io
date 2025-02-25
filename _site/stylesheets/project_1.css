@@ -1,0 +1,220 @@
+body {
+    font-family: Roboto, sans-serif;
+    background: #7bf8ff87;
+    padding: 20px;
+    }
+
+.introduction {
+    .title{
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+    }
+    .sub_title{
+        margin: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #00e6ff;
+      }
+      .author{
+        font-size: 10px;
+        font-weight: bold;
+        color: #00ff83;
+      }
+    display: flex;
+    align-items: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 25px;
+    flex-direction: column;
+    height: 60%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+
+.container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sub_container{
+    margin: 10px 20px;
+}
+
+.project_description{
+    h1 {
+        font-size: 25px;
+        margin: 5px 0px;
+        color: #333;
+      }
+      
+    h3 {
+        color: #555;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+    
+    ul {
+        margin: 10px 0 0 20px;
+    }
+    
+    p {
+        margin: 10px 0;
+    }
+}
+.container_needfinding {
+    border-radius: 8px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .nf_image-container {
+        position: relative;
+        .needfinding_image{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+    }
+    .needfinding{
+        margin: 10px 20px;
+
+        .sub_needfinding{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .flex_content{
+                margin: 0px 20px;
+            }
+    
+            img{
+                width: 30%;
+                aspect-ratio: 1 / 2;
+                object-fit: cover;
+            }
+        }
+        h3 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        ul {
+            margin: 10px 0 0 20px;
+        }
+
+        video{
+            width: 100%;
+        }
+    }
+  }
+
+.container_ideation{
+    border-radius: 8px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .id_image-container {
+        position: relative;
+        .ideation_image{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+    }
+    .sub_ideation{
+        margin: 10px 20px;
+        .flex_content{
+            margin: 0px 20px;
+        }
+
+        img{
+            width: 30%;
+            aspect-ratio: 1 / 2;
+            object-fit: cover;
+        }
+
+        .mindmap_imp{
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: auto;
+            margin: 0 auto;
+        }
+    }
+    h3 {
+        color: #555;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+    
+}
+
+.container_reflection{
+    border-radius: 8px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .reflection_image-container {
+        position: relative;
+        .reflection_image{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .reflection_sub_container{
+        margin: 10px 20px;
+    }
+    h3 {
+        color: #555;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+}
+    
