@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 Human-Robot Interaction for Hospitality - Diary</title>
+    <link rel="stylesheet" href="stylesheets/project_2.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header>
+        <h1>Project 2: Human-Robot Interaction for Hospitality</h1>
+        <p>By Lam Yeung Kong Sunny</p>
+    </header>
+    
+    <nav>
+        <a href="#empathy">Empathy</a>
+        <a href="#ideation">Ideation</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#test">Test & Result</a>
+        <a href="#presentation">Presentation</a>
+        <a href="#reflection">Reflection</a>
+    </nav>
+    
+    <section id="empathy">
+        <h2>Empathy</h2>
+        
+        <p>Our group decided to focus on traveling since it is an inevitable topic for people nowadays, especially juvenile.</p>
+        
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/emphasis.png" alt="Interviewing people about travel experiences" class="section-image">
+                <p class="image_caption">Interviewing UST students about their travel experiences</p>
+            </div>
+        </div>
+        
+        <p>In the empathy process, our group interviewed various UST students (10 people), asking them regarding the hospitality services in different kinds of scenario(s). At the same time, we questioned them whether they think AI agent can be involved in the service. The questions are the following:</p>
+        
+        <ol>
+            <li>Do you like travel?</li>
+            <li>What services do you expect the most or had the best experience?</li>
+            <li>What do you think chatbot or voice agent can enhance this service?</li>
+        </ol>
+        
+        <p>In the process, some people mentioned the intelligent AI agent in a hotel which remind customers of the daily whether condition in mainland China and some of them mentioned the historical introduction from the AI agent while they were visiting heritage. We found out that most people think that guidance as a hospitality service is of paramount importance because of the unfamiliar environments while people are traveling. They may face problems like language barriers, or people are just introverts. Hence, it is important to provide path suggestions, description of things or the suggestion of what to visit under certain scenarios.</p>
+        
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/emphasis_stat.png" alt="Graph of interviewee opinions" class="section-image">
+                <p class="image_caption">Graph of interviewee opinions about travel services</p>
+            </div>
+        </div>
+        
+        <p>To narrow down the scope, we decided to focus on the Theme part, which is one of the most common places to visit for most people during traveling.</p>
+        
+        <div class="contribution">
+            <h3>My Contribution</h3>
+            <p>In this process, I have interviewed a few of people. In other time, I either record the interview or inspire the interviewee if they do not know exactly what to respond. I am also responsible for making the visual graph.</p>
+        </div>
+    </section>
+    
+    <section id="ideation">
+        <h2>Ideation</h2>
+        
+        <p>To design a prototype that can help people more effectively in theme part, it is necessary to make a persona.</p>
+        
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/persona.png" alt="Persona: Alex" class="section-image">
+                <p class="image_caption">Persona visualization for our target user Alex</p>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <h3>Persona: Alex</h3>
+            <p>Alex is 20 years old, college student studying Computer Science. He is an occasional theme park visitor since it is his favorite place to visit around the world with his friend during semester break. He always feels overwhelmed by the size and complexity of theme park. Often, he will take his sister to the theme part together. However, his sister has asthema, he worries that it may be easily separated from his sister or encounter serious asthma in the theme part.</p>
+        </div>
+        
+        <p>Judging from the persona, we can easily identify the POV (i.e. user, need and insight).</p>
+        
+        <div class="grid_container">
+            <div class="grid_item">
+                <h3>User</h3>
+                <p>Tourists visiting a theme park for the first time or people with kids.</p>
+            </div>
+            <div class="grid_item">
+                <h3>Need</h3>
+                <p>Find help instantly no matter what is the emergency. Require straightforward directions.</p>
+            </div>
+            <div class="grid_item">
+                <h3>Insight</h3>
+                <p>They require direct staff assistance and communication. Navigation is quite hard in a big park, anxiety may even increase while emergencies happen.</p>
+            </div>
+        </div>
+        
+        <p>Hence, it is vital to recognize that emergency is also a crucial aspect to consider.</p>
+        
+        <h3>Mind Map</h3>
+        
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/project2_mindmap.png" alt="Mind map for AI agent features" class="section-image">
+                <p class="image_caption">Mind map visualizing potential AI agent features and functionalities</p>
+            </div>
+        </div>
+        
+        <p>The mindmap we draw has two directions:</p>
+        
+        <ol>
+            <li>
+                <strong>Finding path</strong>
+                <ul>
+                    <li>For navigation, we can have voice navigation, visual navigation and text-base direction navigation.</li>
+                    <li>For Route element, we can have route that is determined by ai agent itself, by algorithm (like dijkstra algorithm). After determining the route decision, it is also possible to priorize the path with scene or less crowd.</li>
+                    <li>For AI agent input, we can have text, voice or image.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Emergency</strong>
+                <ul>
+                    <li>For SOS, we can have the SOS button in the AI agent application, locate the first-aid station after asking for help to the AI agent or the AI agent trigger location sharing to the staff.</li>
+                    <li>For medical assistance, we can either open an online assistance conversation, report with sample description to the AI agent, call for staff comes or call ambulance instantly by the AI agent.</li>
+                    <li>For lost child assistance, we can either let AI agent to broadcast alert to the theme park internal system or share the location to the staff and allow staff to be alerted instantly.</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <p>Judging from the mind map and brainstorming, we conclude that following aspects should be considered while designing the AI agent prototype:</p>
+        
+        <ul>
+            <li><strong>Navigation Assistance:</strong> Provide navigation message.</li>
+            <li><strong>Emergency Assistance:</strong> Ask help to AI agent. Helps to reunite lost children or other emergencies.</li>
+            <li><strong>Personalized Recommendation:</strong> Suggests facility/area or even restaurant based on user preference.</li>
+            <li><strong>Park Introduction:</strong> Provide different introductions related to the Theme Park.</li>
+        </ul>
+        
+        <h3>Potential Solutions</h3>
+        <p>After serious discussion among our team, we decided that there are 3 potentials solutions for the path finding, emergency related problems:</p>
+        
+        <div class="grid_container">
+            <div class="grid_item">
+                <h4>Solution 1: Voice Agent</h4>
+                <p>Tourists can speak to an AI agent that works like a staff member. They can ask for guidance or help with emergencies using voice, and the AI will respond with voice.</p>
+            </div>
+            <div class="grid_item">
+                <h4>Solution 2: Staff Assistance via AI</h4>
+                <p>An AI system that can summon a human staff member when tourists are lost or experiencing an emergency.</p>
+            </div>
+            <div class="grid_item">
+                <h4>Solution 3: Virtual Map AI Agent</h4>
+                <p>An agent that provides a virtual map on screen after requesting destination or staff locations.</p>
+            </div>
+        </div>
+    
+        
+        <h3>Storyboard</h3>
+        
+        <div class="image_con">
+            <div class="image_item">
+                <img src="image/storyboard.png" alt="Storyboard showing overall process" class="section-image">
+                <p class="image_caption">Storyboard illustrating the overall user journey with our AI agent</p>
+            </div>
+        </div>
+        
+        <p>We created a storyboard showing different scenarios where tourists might use each solution:</p>
+        <ul>
+            <li>Getting lost in the theme park</li>
+            <li>Dealing with a medical emergency (someone passing out)</li>
+            <li>Each solution being used to solve these problems</li>
+            <li>The resolution of each scenario with the different solutions</li>
+        </ul>
+        
+        <h3>Speed Dating</h3>
+        
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/storyboard_interview.png" alt="Storyboard interview with a participant" class="section-image">
+                <p class="image_caption">Speed dating session with a participant reviewing our storyboard</p>
+            </div>
+        </div>
+        <p>We showed the storyboard to people and asked the following questions:</p>
+        <ol>
+            <li>Which solution do you prefer the most and why?</li>
+            <li>Which solution do you prefer the least and why?</li>
+            <li>For each designed solution, what aspects can be improved?</li>
+        </ol>
+        
+        <p>After interviewing people, the main feedback was:</p>
+        <ul>
+            <li>The voice agent would not work well in a crowded environment like a theme park</li>
+            <li>Staff assistance via AI agent has no guarantee on wait times</li>
+            <li>The Online Map could be seriously affected by network issues and GPS accuracy, potentially leading users in wrong directions</li>
+        </ul>
+        
+        <p>With careful consideration, we decided to minimize the limitations of each solution while combining their strengths. This led us to design an AI agent that supports both text and voice. The path-finding feature considers crowd levels, and the emergency response system has different actions based on the specific situation tourists are encountering.</p>
+        
+        <div class="contribution">
+            <h3>My Contribution</h3>
+            <p>While designing the persona, I suggested points that can apply to everyone, like people who easily get lost in theme parks and potential emergencies, especially involving children. These opinions enabled us to create a precise persona and figure out the POV. I also suggested key elements for our mindmap, such as crowd level considerations. Additionally, I drew the storyboard for various solutions, which allowed the group to conduct speed dating effectively.</p>
+        </div>
+    </section>
+    
+    <section id="prototype">
+        <h2>Prototype</h2>
+        <div class="video_container">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/djOtMfrvG5s?si=fYaLlYQoM49_OV6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <h3>Technical Implementation</h3>
+        <p>The prototype is based on the following vital technologies:</p>
+        
+        <ul>
+            <li><strong>Speech-to-Text (STT):</strong> Transforms spoken words into text which can be processed.</li>
+            <li><strong>Text-to-Speech (TTS):</strong> Produces speech output from text responses that an agent receives.</li>
+            <li><strong>OpenAI Model:</strong> Handles queries and responds in real-time based on user inputs.</li>
+            <li><strong>Graph Navigation:</strong> The park's amenities and trails are represented as a graph allowing the agent to find the best route based on crowd levels.</li>
+            <li><strong>Emergency Detection:</strong> Identifying an emergency and responding to it using a keyword-based approach.</li>
+        </ul>
+        
+        <div class="grid_container">
+            <div class="grid_item">
+                <h4>1. Path Navigation With Consideration of Crowd Levels</h4>
+                <p>The real-time crowd levels of a venue and its particular points of interest are of particular concern to the AI agent in leading the visitors to their various places of interest. A visitor will be able to ask for the directions that are best suited to a given facility and the agent should be able to:</p>
+                <ul>
+                    <li><strong>Give Proper Instructions:</strong> Step-by-step instructions using relevant area pointers like north, south, etc.</li>
+                    <li><strong>Southbound Directions:</strong> Where possible, the least crowded areas will be used especially when pathways appear crowded.</li>
+                    <li><strong>Flexible Responses:</strong> The agent uses real-time data to ensure directions remain relevant and responsive to changing crowd levels.</li>
+                </ul>
+                <p>This capability ensures that users are able to move around the park while avoiding principal routes, thus improving their experience.</p>
+            </div>
+            
+            <div class="grid_item">
+                <h4>2. Reporting an Emergency</h4>
+                <p>All visitors are catered for within the AI system to report emergencies. There are two methods to invoke emergency response:</p>
+                <ul>
+                    <li><strong>SOS Button:</strong> An SOS button on the interface allows visitors to directly call staff's attention.</li>
+                    <li><strong>AI-Driven Input:</strong> Any mention of emergency phrases, such as 'injured', 'lost child', or 'medical help' prompts the agent to trigger the suitable action.</li>
+                </ul>
+                <p>The system manages three categories of emergencies:</p>
+                <ul>
+                    <li><strong>Medical Emergencies:</strong> Staff is notified, and visitors are instructed to remain in their vicinity until assistance arrives.</li>
+                    <li><strong>Lost Child Protocol:</strong> Children losing themselves prompts a park-wide system activation, including dispatching security personnel, monitoring exits, and broadcasting announcements.</li>
+                    <li><strong>General Emergencies:</strong> Staff are alerted to respond to visitors based on issues they are experiencing.</li>
+                </ul>
+            </div>
+            
+            <div class="grid_item">
+                <h4>3. Emergency Lost Items Reports</h4>
+                <p>A conversational interface-based reporting system for lost items has been developed. Visitors can:</p>
+                <ul>
+                    <li><strong>Share Critical Information:</strong> The AI requests vital information like item category, description, and location last seen.</li>
+                    <li><strong>Submit Reports:</strong> An automated report is created with a tracking number for monitoring.</li>
+                    <li><strong>Choose Response Options:</strong> Visitors can request emergency staff support or opt to fill out a report independently.</li>
+                </ul>
+                <p>This system assists in documenting the process of attempting to find and recover lost items, lessening the burden on visitors.</p>
+            </div>
+            
+            <div class="grid_item">
+                <h4>4. Introduction of the Facility</h4>
+                <p>The AI agent gives full descriptions of park facilities when asked by visitors:</p>
+                <ul>
+                    <li><strong>Detailed Descriptions:</strong> The agent can provide information about specific facilities like roller coasters or theaters and explain what makes them special.</li>
+                    <li><strong>Real-time Crowd Information:</strong> Visitors are made aware of current crowd levels at facilities to make better decisions.</li>
+                    <li><strong>Engaging Communication:</strong> The agent uses a friendly and enthusiastic manner when interacting with visitors.</li>
+                </ul>
+                <p>This feature enhances visitors' understanding of the park's attractions and encourages exploration.</p>
+            </div>
+        </div>
+        
+        <div class="contribution">
+            <h3>My Contribution</h3>
+            <p>In the prototype process, I was responsible for creating the initial prompt and crowd level implementation, which included further improving the prompt, updating the graph, and fixing serious bugs.</p>
+        </div>
+    </section>
+    
+    <section id="test">
+        <h2>Test & Result</h2>
+
+        <div class="image_container">
+            <div class="image_item">
+                <img src="image/user_test.png" alt="One User testing scenario" class="section-image">
+                <p class="image_caption">User testing scenario</p>
+            </div>
+        </div>
+        
+        <p>We conducted user testing with 8 participants to evaluate our prototype's effectiveness. The testing focused on key functionality areas: navigation, emergency assistance, lost item reporting, and facility information.</p>
+        
+        <h3>Testing Methodology</h3>
+        <p>Each participant was given scenario-based tasks to complete using our AI agent prototype in a simulated theme park environment. We recorded their interactions and collected feedback through a post-test questionnaire and brief interviews.</p>
+        
+        <div class="grid_container">
+            <div class="grid_item">
+                <h4>Overall feedback</h4>
+                <ul>
+                    <li>User has positive feedback about the emergency mode, the shortest path and the crowd level</li>
+                    <li>The accuracy of the navigation is clear enough</li>
+                </ul>
+            </div>
+            
+            <div class="grid_item">
+                <h4>AI agent response</h4>
+                <p><strong>Results:</strong> The voice output is not natural enough for many people</p>
+                <p><strong>Suggestion:</strong></p>
+                <ul>
+                    <li>The output structure should be natural for voice output</li>
+                    <li>The voice-over should be more natural. The current one sounds weird and non-human</li>
+                </ul>
+            </div>
+            
+            <div class="grid_item">
+                <h4>Lost Items Reporting</h4>
+                <p><strong>Results:</strong> All users successfully completed the lost item reporting process.</p>
+                <p><strong>Feedback:</strong></p>
+                <ul>
+                    <li>Users found the tracking system helpful</li>
+                    <li>Some requested photo attachment capability</li>
+                </ul>
+            </div>
+            
+            <div class="grid_item">
+                <h4>Facility Information</h4>
+                <p><strong>Results:</strong> Users rated the facility descriptions as informative (avg. 4.2/5) and helpful for decision-making.</p>
+                <p><strong>Suggestions:</strong></p>
+                <ul>
+                    <li>Include more photos of attractions</li>
+                    <li>Add estimated wait times</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Key Findings</h3>
+        <p>Overall, our prototype demonstrated strong potential to enhance theme park experiences through AI assistance. The dual text/voice input capability proved essential, with users switching between modes depending on their environment and situation.</p>
+        
+        <h3>Improvements Implemented</h3>
+        <p>Based on test feedback, in my own opinion, the future adjustment can be:</p>
+        <ul>
+            <li>Improved navigation aids and added visual markers</li>
+            <li>Replaced emergency interface with a redesigned one that features a larger SOS button</li>  
+
+            <li>Provided additional instructions for accessing emergency help, detailing the approximate time responses would be provided.</li>  
+    
+            <li>Updated facility descriptions to include the estimated wait times.</li>
+    
+        </ul>
+    </section>
+    
+    <section id="presentation">
+        <h2>Presentation</h2>
+        
+        <p>In the presentation, I was responsible for talking about the ideation part. In my opinion, the performance of the presentation was not good. We should practice more on presentation skills. For example, in the Q&A section, a student asked us a question which was already mentioned in the presentation. This indicates that the presentation was not engaging enough and failed to captivate the audience's attention throughout.</p>
+    </section>
+    
+    <section id="reflection">
+        <h2>Reflection</h2>
+
+        <p>This project has taught me the application of design thinking frameworks to human-robot interaction for AI in hospitality. Developing this agent for a theme park shed light on vital lessons I will remember for future endeavors.</p>
+
+        <p>First, I understand the deep impact of user empathy AI solutions require. User interviews showcased intricate nuances of technology and user needs which would have stayed dormant without actual interactions. The range of ease users had with technology underlined the need to design with varying levels of proficiency in mind, making inclusivity essential.</p>
+
+        <p>During group brainstorming, I was challenged to think beyond the primary scope of what was possible. Some of my suggestions were impractical, and through working with the team, I learned to strategically assess ideas from multiple angles, including user needs, technical achievement, and relevance judged from scope.</p>
+
+        <p>The learning did not cease at brainstorming and factor idealization, as prototype building, particularly my focus on crowd-level implementation, showcased building functional features from conceptual plans is far more complex than it seems. I initially faced hurdles with the technical architecture, but these hurdles forced me to learn how to tackle intricate systems needing subdividing into simpler constituents, improving my overall problem-solving skills.</p>
+
+        <p>The gaps between the expected and actual user experiences were uncovered during our testing phase. Certain aspects that I considered to be self-explanatory turned out to be challenging for users, which reminded me to not make guesses when it comes to user actions. This further highlighted the importance of ongoing testing and adjustments towards effective design.</p>
+
+        <p>Ultimately, our presentation experience revealed that I need to enhance my communicative abilities. Mastering the technical side of things is not enough; one’s ability to present concepts in an interesting and lucid manner is just as critical to achieve project goals.</p>
+    </section>
+    
+    <footer>
+        <p>Project 2 Human-Robot Interaction for Hospitality - Design Thinking Process Diary</p>
+    </footer>
+</body>
+</html>
