@@ -15,7 +15,6 @@ body {
   padding: 20px;
 }
 
-/* Header */
 header {
   background-color: #006d77;
   color: #f0f8f7;
@@ -35,7 +34,6 @@ header p {
   font-size: 1.1rem;
 }
 
-/* Navigation */
 nav {
   background-color: #83c5be;
   display: flex;
@@ -127,7 +125,6 @@ li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Contribution Boxes */
 .contribution,
 .highlight-box {
   padding: 15px 20px;
@@ -146,7 +143,6 @@ li {
   border-left: 5px solid #83c5be;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
