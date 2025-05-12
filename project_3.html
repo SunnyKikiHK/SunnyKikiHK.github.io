@@ -4,26 +4,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project 3: Social Extended Reality (XR) for Local Community - Diary</title>
-  <link rel="stylesheet" href="stylesheets/project_3.css">
+  <style>
+    /* Global Styles & Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f9f9;
+      color: #333;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Header */
+    header {
+      background-color: #007d8a;
+      color: #f0f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    /* Navigation */
+    nav {
+      background-color: #00a1b5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px 0;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #f0f9f9;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #006b75;
+    }
+    /* Sections */
+    section {
+      background-color: #ffffff;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      color: #007d8a;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #00a1b5;
+      font-size: 1.8rem;
+    }
+    section p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    section ol, section ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    section li {
+      margin-bottom: 10px;
+    }
+    /* Image container */
+    .image_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .image_item {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    .image_item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    /* Video container */
+    .video_container {
+      position: relative;
+      width: 100%;
+      margin: 30px 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .video_container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+    /* Contribution box */
+    .contribution {
+      background-color: #d9f2f1;
+      border-left: 5px solid #007d8a;
+      padding: 15px 20px;
+      margin: 25px 0;
+      border-radius: 4px;
+      font-style: italic;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section h2 {
+        font-size: 1.6rem;
+      }
+      section {
+        padding: 20px;
+      }
+      .video_container iframe {
+        height: 300px;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Project 3: Social Extended Reality (XR) for Local Community</h1>
     <p>By Lam Yeung Kong Sunny</p>
   </header>
-
+  
   <nav>
     <a href="#empathy">Empathy</a>
     <a href="#ideation">Ideation</a>
-    <a href="#usability">Usability Test</a>
-    <a href="#qualitative">Qualitative Evaluation</a>
+    <a href="#usabilitytest">Usability test</a>
+    <a href="#qualitative">Qualitative User Evaluation</a>
     <a href="#reflection">Reflection</a>
   </nav>
-
+  
   <section id="empathy">
-    <h2>Empathy</h2>
+    <h2>-Empathy</h2>
     <p>
-      In the empathy process, our group examined potential concerns when the community takes part in second-hand furniture events. We conducted a survey using Google Forms with the following questions:
+In the empathy process, our group tried to see is there any concerns while community is taking part in event that is related to buying second hand furniture. Hence, we have conducted a survey using google form and send to people. The questions are following:
     </p>
     <ol>
       <li>Have you ever bought or sold second-hand furniture in Hong Kong? (Single selection)</li>
@@ -35,40 +184,55 @@
     </ol>
     <div class="image_container">
       <div class="image_item">
-        <img src="image/interview_result_1.png" alt="Interview Result 1">
+        <img src="image/interview_result_1.png" alt="Interview result 1">
       </div>
       <div class="image_item">
-        <img src="image/interview_result_2.png" alt="Interview Result 2">
+        <img src="image/interview_result_2.png" alt="Interview result 2">
       </div>
     </div>
     <p>
-      After gathering data from 17 people, we found that almost 90% had bought or sold second-hand furniture. Most used online trading platforms such as Carousell followed by face-to-face transactions (around 41%). Major concerns included the condition of the item, the size of transportation, mismatched specifications, and the distance to visit the store. The problems were summarized in the table below.
+After gathering data from 17 people, we found out that almost 90% of them bough or sold second-hand furniture and majority of them have used online trading platforms, like carousel, which is a common way nowadays and follow by face-to-face transaction, around 41%. And most of them experienced transaction worried about the condition of the furnitures , the size to carry, the unmatching size for the horse and the distance to go to the shop.
+    </p>
+    <p>
+The summary of the problem raised can be summarized in following table.
     </p>
     <div class="image_container">
       <div class="image_item">
-        <img src="image/problem_grouped.png" alt="Problem Summary Table">
+        <img src="image/problem_grouped.png" alt="Problem Grouped Table">
       </div>
     </div>
     <p>
-      In addition, we observed a local Hong Kong shop near the Prince Edward MTR station inside Pioneer Centre. We noted that most furniture is large, which forces buyers to measure spaces—sometimes with little help from the staff.
+Based on the problems, we observe the needs to be able to do visualization of the furniture in a virtual space and one possible solution is to use AR app to preview furniture and use 3D models instead of photo only.
+    </p>
+    <p>
+In addition, we also do observation in a local Hong Kong shop near the Prince Edward MTR station inside Pioneer Centre.
     </p>
     <div class="image_container">
       <div class="image_item">
-        <img src="image/local_furniture_shop.png" alt="Local Furniture Shop Observation">
-      </div>
-      <div class="image_item">
-        <img src="image/project_3_GOMS.png" alt="GOMS Model for Current Operations">
+        <img src="image/local_furniture_shop.png" alt="Local Furniture Shop">
       </div>
     </div>
     <p>
-      <strong>My Contribution:</strong> I sent out the survey, motivated friends to respond, hosted the shop observation, recorded details, and offered suggestions during the creation of the GOMS model.
+We walked in and observed that most furniture are large in size, which means that people need to measure the space required before going to the store. It will spend lots of time cost. By pretending to be customer, we ask the stuff for help as we do not record the space measurement and unsurprisingly the stuff cannot help us as they cannot go to our horse and measure! Right ?
+    </p>
+    <div class="image_container">
+      <div class="image_item">
+        <img src="image/project_3_GOMS.png" alt="Project 3 GOMS Model">
+      </div>
+    </div>
+    <p>
+We also made a GOMS model to interpret the current solution and operations for buying second hand furniture, namely the Facebook, Carousell and In person.
+    </p>
+    <p>
+My contribution: 
+In the emphasis process, I send the google form to all my friends and motivate them to finish it. Also, I host the observation and record down the things that happened while we were visiting the shop. I also give suggestion while my groupmate was making the GOMS model, like the problems of current operations and potential solution for the problems by changing some operations.
     </p>
   </section>
-
+  
   <section id="ideation">
-    <h2>Ideation</h2>
+    <h2>-Ideation</h2>
     <p>
-      In the ideation phase, we created three personas to define our target users:
+In the ideation, we first created 3 persona.
     </p>
     <div class="image_container">
       <div class="image_item">
@@ -82,197 +246,255 @@
       </div>
     </div>
     <p>
-      Based on these personas, we outlined our POV:
+Based on the situation and scenario suggested in these persona, we constructed the POV that was considered with ideals and constraints in following:
     </p>
-    <ul>
-      <li><strong>Users:</strong> 
-        <ul>
-          <li>Primary User: Hong Kong residents looking to buy second-hand furniture.</li>
-          <li>Secondary User: Sellers of second-hand furniture.</li>
-        </ul>
+    <ol>
+      <li>
+        User:
+        <ol type="a">
+          <li>Primary User: Hong Kong residents who want to buy second-hand furniture</li>
+          <li>Secondary User: Seller and people who sell second-hand furniture</li>
+        </ol>
       </li>
-      <li><strong>Need:</strong>
-        <ul>
-          <li>Buyer: Accurate visualization of furniture without wasting time or money.</li>
-          <li>Seller: A method to present furniture using 3D models instead of just 2D photos, reducing refund requests due to mismatched sizes.</li>
-        </ul>
+      <li>
+        Need:
+        <ol type="a">
+          <li>Buyer: They want accurate visualization of furniture before buying furnitures. Do not want to waste money or time that don’t work.</li>
+          <li>Seller: They want solution that do not reply on 2D photo, like 3D model. And the models need to be visually appealing to demonstrate the furniture. In addition, we want to reduce refund due to unfitting size in buyer’s home.</li>
+        </ol>
       </li>
-      <li><strong>Insight:</strong> Hong Kong’s spatial constraints make both buying and selling furniture challenging.</li>
-    </ul>
+      <li>
+        Insight:
+        <ol type="a">
+          <li>Hong Kong space is constrained, which make buying and selling furniture a challenge. Buyer is struggled to image the size and seller find it difficult to present object effectively.</li>
+        </ol>
+      </li>
+    </ol>
     <p>
-      Our brainstorming led us to map out ideas in a mindmap:
+Based on above, we brainstorm a lot of solutions and present them in a mindmap.
     </p>
     <div class="image_container">
       <div class="image_item">
         <img src="image/project3-mindmap.png" alt="Project 3 Mindmap">
       </div>
     </div>
-    <p>
-      We also developed storyboard illustrations. For the <strong>existing solution</strong>, the buyer and seller steps are:
-    </p>
-    <h3>Existing Solution Storyboard</h3>
-    <ol>
-      <li><strong>Buyer’s Steps:</strong>
-        <ul>
-          <li>Scroll online and pick a furniture item.</li>
-          <li>Measure the current space.</li>
-          <li>Confirm the size and condition with the seller.</li>
-          <li>Visit the shop and finalize the deal.</li>
-        </ul>
-      </li>
-      <li><strong>Seller’s Steps:</strong>
-        <ul>
-          <li>Take a picture of the furniture.</li>
-          <li>Measure the furniture’s size.</li>
-          <li>Post the images and details online.</li>
-          <li>Proceed with the deal as per the buyer’s steps.</li>
-        </ul>
-      </li>
-    </ol>
-    <p>
-      For our <strong>initial solution</strong>, the steps become:
-    </p>
-    <h3>Initial Solution Storyboard</h3>
-    <ol>
-      <li><strong>Buyer’s Steps:</strong>
-        <ul>
-          <li>Find furniture in the XR virtual market.</li>
-          <li>Place the furniture’s 3D model in their home using AR.</li>
-          <li>Check the furniture condition using the 3D scan.</li>
-          <li>Confirm the deal and set a pick-up time.</li>
-        </ul>
-      </li>
-      <li><strong>Seller’s Steps:</strong>
-        <ul>
-          <li>3D scan the furniture with a phone.</li>
-          <li>List the furniture with detailed 3D model information on the virtual market.</li>
-          <li>Negotiate and confirm the deal with the buyer.</li>
-        </ul>
-      </li>
-    </ol>
-    <div class="image_container">
-      <div class="image_item">
-        <img src="image/project3-speed-dating-1.png" alt="Speed Dating Session 1">
-      </div>
-      <div class="image_item">
-        <img src="image/project3-speed-dating-2.png" alt="Speed Dating Session 2">
-      </div>
-    </div>
-    <p>
-      Based on feedback during speed dating, we refined our storyboard. Here is the finalized storyboard:
-    </p>
-    <div class="image_container">
-      <div class="image_item">
-        <img src="image/storyboard-final.jpg" alt="Final Storyboard">
-      </div>
-    </div>
-    <p>
-      The prototype details include:
-    </p>
-    <ol>
-      <li><strong>Scanning:</strong>
-        <ul>
-          <li>Use an AR application to 3D scan furniture by the seller.</li>
-          <li>Load and upload the details to the virtual market.</li>
-        </ul>
-      </li>
-      <li><strong>Virtual Market:</strong>
-        <ul>
-          <li>Built using Unity and a spatial toolkit.</li>
-          <li>Allows buyers to walk around, communicate with sellers, and check furniture details.</li>
-        </ul>
-      </li>
-      <li><strong>Placing:</strong>
-        <ul>
-          <li>Buyer downloads the 3D model from the virtual market.</li>
-          <li>Uses the AR application to place the furniture in their home.</li>
-          <li>If the furniture fits, the buyer finalizes the deal and arranges pick-up.</li>
-        </ul>
-      </li>
-    </ol>
-    <p>
-      Watch the prototype demo:
-    </p>
-    <div class="video_container">
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/SQmR7ieGKcM?si=fYaLlYQoM49_OV6G" title="Prototype Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p>
-      <strong>My Contribution:</strong> I led the persona creation (based on feedback from the empathy stage), helped establish the POV, contributed to the mindmap and storyboard iterations, and coordinated with a friend experienced in moving house.
-    </p>
-  </section>
-
-  <section id="usability">
-    <h2>Usability Test</h2>
-    <p>
-      We designed a skeletal prototype to demonstrate the platform’s vital features—including furniture capture, virtual market navigation, and AR placement. Key features of the usability test include:
-    </p>
+    <p>User Involvement:</p>
     <ul>
-      <li><strong>Prototype Type:</strong> A software mockup to simulate essential interactions.</li>
-      <li><strong>Retrospective Think Aloud Protocol:</strong>
-        <ul>
-          <li>Three users engaged with the prototype and later reviewed video recordings of their interactions.</li>
-          <li>User feedback on usability, feature evaluations, and concerns was documented.</li>
-        </ul>
-      </li>
+      <li>Gamification Elements: Enhancers of user participation as rewards, for example coupons for logging in daily.</li>
+      <li>Interactive Product Demos: Enables users to do virtual try-ons of furniture.</li>
+    </ul>
+    <p>Customization and Help:</p>
+    <ul>
+      <li>Design Modification of Furniture: Users may change colors or customize features on furniture.</li>
+      <li>Virtual Guides: Walk users through the shopping journey.</li>
+    </ul>
+    <p>User Responses:</p>
+    <ul>
+      <li>User Feedback and Reviews In VR: Allows users to view assessed products alongside other users feedback.</li>
+    </ul>
+    <p>Technology Use in Furniture Shopping:</p>
+    <ul>
+      <li>Furniture AR Scanning: Uses augmented reality to scan and show furniture pieces to the user.</li>
+      <li>Furniture AR Showing: Enhances the shopping experience by previewing how the furniture would look in the user’s room.</li>
+    </ul>
+    <p>Marketplace Functions:</p>
+    <ul>
+      <li>Marketplace Put Up Users Furniture: Users are able to upload furniture they wish to sell.</li>
+      <li>Condition Checking: Enables users to confirm the state of items prior to purchase.</li>
+      <li>Room Fitting: Helps users see how furniture will fit in their space.</li>
     </ul>
     <p>
-      The test outcomes indicated:
+We have drawn storyboard of existing solution and our initial solution.
     </p>
+    <p>For existing solution, buyer’s step is as follows:</p>
     <ol>
-      <li>The idea is perceived as innovative.</li>
-      <li>Significant time savings compared to visiting a store.</li>
-      <li>High overall user satisfaction.</li>
+      <li>Scroll online and pick an furniture in online platform</li>
+      <li>Measure the current space</li>
+      <li>Conform the size and condition with the seller</li>
+      <li>Check the furniture offline and make the deal</li>
     </ol>
-    <p>
-      One example of the Retrospective Think Aloud Protocol can be viewed here:
-    </p>
-    <div class="video_container">
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/hHpvp9D0X0M?si=fYaLlYQoM49_OV6G" title="Retrospective Think Aloud Protocol" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>For seller’s step:</p>
+    <ol>
+      <li>Take a picture of the furniture</li>
+      <li>Measure the size of the furniture</li>
+      <li>Post image and the detail of the furniture to the online platform</li>
+      <li>Follow the step of 3 and 4 from buyer’s step in a seller’s position.</li>
+    </ol>
+    <p>For initial solution, buyer’s step is as follows:</p>
+    <ol>
+      <li>Find the furniture from the XR virtual market where the furniture is presented as images in the market.</li>
+      <li>Place the furniture’s 3D model in the house using AR functionality in phone.</li>
+      <li>Buyer can also check the condition with the 3D scan of the furniture</li>
+      <li>Make a deal and confirm pick up time</li>
+    </ol>
+    <p>For seller’s step:</p>
+    <ol>
+      <li>3D scan the furniture with a phone.</li>
+      <li>List the furniture with detailed information with 3D scan on the virtual market by attaching a image on the wall.</li>
+      <li>Make a deal with buyer and confirm pick up time with buyer</li>
+    </ol>
+    <div class="image_container">
+      <div class="image_item">
+        <img src="image/project3-speed-dating-1.png" alt="Speed dating 1">
+      </div>
+      <div class="image_item">
+        <img src="image/project3-speed-dating-2.png" alt="Speed dating 2">
+      </div>
     </div>
     <p>
-      <strong>My Contribution:</strong> I participated in designing the protocol and selecting the appropriate type of prototype for the usability test.
+After finishing the storyboard, we do speed dating and collect the opinions from people. People tend to suggest that 3D models should be placed in the virtual market instead of photos to let buyers and sellers to have more immersive experience while walking around the virtual market. That’s why we change the storyboard and finalized the proposal.
+    </p>
+    <div class="image_container">
+      <div class="image_item">
+        <img src="image/storyboard-final.png" alt="Storyboard Final">
+      </div>
+    </div>
+    <p>
+Eventually, the prototype details are below:
+    <br>1. Scanning 
+    <br>   a. Scanning furniture using AR applications to get the 3D model data by seller.
+    <br>   b. Let the AR application loads the details.
+    <br>   c. Upload to the virtual market 
+    <br>2. Virtual Markrt
+    <br>   a. Virtual Market is built using Unity and spatial toolkit 
+    <br>   b. Buyer walk around the market 
+    <br>   c. Communicate with the seller if certain furniture is suitable.
+    <br>   d. Include functionalities like point of interest and trigger event etc, allow buyer to check the furniture condition and interact with the furniture.
+    <br>3. Placing 
+    <br>   a. Buyer get the 3d Model data from virtual market.
+    <br>   b. Use the AR application again for placing the furniture in the house this time.
+    <br>   c. If the virtual furniture is fitted in the house, buyer can make a deal and confirm the pick up time with the seller
+    </p>
+    <p>
+Below is a demo:
+    </p>
+    <p>
+<a href="https://youtu.be/SQmR7ieGKcM" target="_blank">https://youtu.be/SQmR7ieGKcM</a>
+    </p>
+    <div class="video_container">
+      <iframe src="https://www.youtube.com/embed/SQmR7ieGKcM?si=fYaLlYQoM49_OV6G" title="Prototype Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>
+My contribution:
+    </p>
+    <p>
+In the ideation process, I was responsible for the persona creation after getting the feedback from the emphasis stage. I analyze the needs for both buyers and sellers and create persona to represent them. Based on the personas, I discussed them with my groupmate and concluded the ideals and constraints by making POV, i.e. user, need and insight. In addition, I also give suggestions while my groupmates were making mindmap and storyboard. Lastly, I invite my friend who has experience in moving house to express the opinion based on the initial solution storyboard and existing solution storyboard, which establish the fundaments of brainstorming finalized proposal.
     </p>
   </section>
-
+  
+  <section id="usabilitytest">
+    <h2>-Usability test</h2>
+    <p>
+The focus of this usability test centers around gauging a software platform’s prototype with a skeletal framework intended to demonstrate its most vital feature, which includes furniture capturing, virtual market placers, and AR placement. The participants will take part in user interaction scenarios which will let them place themselves in the system without having an operational version of the platform.
+    </p>
+    <p>Important Features of the Usability Test:</p>
+    <ol>
+      <li>
+        Prototype Type:
+        <ul>
+          <li>A software designed to demonstrate the most crucial attributes of the platform.</li>
+          <li>Enables users to experience bounded simulations of interactions.</li>
+        </ul>
+      </li>
+      <li>
+        Retrospective Think Aloud Protocol:
+        <ul>
+          <li>Involves three users who, after engaging with the prototype will reflect and provide feedback.</li>
+          <li>Users will be encouraged to express their thoughts as they watch a video of their interaction, reflecting on usability, feature evaluations, concerns, and expectations.</li>
+        </ul>
+      </li>
+      <li>
+        Document:
+        <ul>
+          <li>Feedback will be captured documenting user comments during and post their interactions detailing their reflections.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+This usability test seeks to collect pertinent evaluation data from users in order to design the platform better and improve user experience.
+    </p>
+    <p>The result as follows:</p>
+    <ol>
+      <li>People think the idea is innovative</li>
+      <li>Much lower time cost compare to going to store directly</li>
+      <li>High satisfaction overall</li>
+    </ol>
+    <p>Below is one of the retrospective think aloud protocol example for a user:</p>
+    <p>
+<a href="https://youtu.be/hHpvp9D0X0M" target="_blank">https://youtu.be/hHpvp9D0X0M</a>
+    </p>
+    <div class="video_container">
+      <iframe src="https://www.youtube.com/embed/hHpvp9D0X0M?si=fYaLlYQoM49_OV6G" title="Retrospective Think Aloud Protocol" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>
+My contribution:
+    </p>
+    <p>
+I have taken part in participating in designing the usability test, including using Retrosecptive Think Aloud Protocol and decide the prototype the usability test to be used.
+    </p>
+  </section>
+  
   <section id="qualitative">
-    <h2>Qualitative User Evaluation</h2>
+    <h2>-Qualitative User Evaluation</h2>
     <p>
-      This phase involved organizing the data from the usability test by transcribing the video recordings and applying an inductive coding approach.
+1. Organization of Data 
+    <br>First, we organize the data by turning the recording result from the usability test into transcript, i.e. video to text
     </p>
-    <ul>
-      <li><strong>Organization of Data:</strong> Video recordings were converted to text transcripts.</li>
-      <li><strong>Coding:</strong> A self-implemented code book was developed to categorize findings.</li>
-      <li><strong>Descriptive Analysis:</strong> A table was used to summarize the findings.</li>
-      <li><strong>Second Order Analysis:</strong> Conclusions were induced based on the descriptive data.</li>
-    </ul>
+    <p>
+2. Inductive Approach and Coding 
+    <br>Below is the self implemented Coding book
+    </p>
     <div class="image_container">
       <div class="image_item">
         <img src="image/code_book.png" alt="Code Book">
       </div>
+    </div>
+    <p>
+3. Descriptive Analysis
+    <br>Below is the table for descriptive analysis
+    </p>
+    <div class="image_container">
       <div class="image_item">
         <img src="image/descriptive_analysis.png" alt="Descriptive Analysis Table">
       </div>
+    </div>
+    <p>
+4. Based on the descriptive analysis, we can induce a second order analysis
+    </p>
+    <div class="image_container">
       <div class="image_item">
         <img src="image/second_order_analysis.png" alt="Second Order Analysis">
       </div>
     </div>
     <p>
-      <strong>My Contribution:</strong> I led the evaluation process by coding the data and drawing conclusions to address the design deficits.
+This evaluation allows us to find out the casualty.
+    </p>
+    <p>
+My contribution:
+    </p>
+    <p>
+I was responsible for leading this part, meaning I am the one to do evaluation based on data and concluded the results.
     </p>
   </section>
-
+  
   <section id="reflection">
-    <h2>Reflection</h2>
+    <h2>-Reflection</h2>
     <p>
-      This project has been an invaluable learning experience. The empathy stage uncovered major drawbacks in current second-hand furniture transactions, while the ideation phase allowed us to creatively integrate AR and 3D modeling into a virtual marketplace. My active involvement in user research, persona development, and usability testing has strengthened my collaborative and analytical skills.
+This project offered learning opportunities on how technology can resolve issues associated with second-hand furniture dealing. The empathy stage identified several major drawbacks for buyers and sellers, including furniture spatial limitations, visualization challenges, and inefficiencies with existing platforms. The ideation phase showcased the ability to apply AR and 3D modeling with more advanced virtual marketplaces and improved user experience through better visualization and interaction with furniture.
     </p>
     <p>
-      Observing direct feedback and engaging in iterative design helped reinforce the necessity of user-centered design. The high-level evaluation further validated that innovative features—like AR furniture placement—can significantly reduce time and improve satisfaction.
+My participation in user research, personas, and usability tests exposed me to varying aspects of user-centered design and iterative solution development. Notably, observing user feedback from speed dating and Retrospective Think Aloud Protocol mechanics reinforced the need to refine solutions based on actual feedback.
+    </p>
+    <p>
+Users noted in the usability test that the prototype's primary functions of AR furniture placement and virtual market constituted innovative time savers. Moreover, within the qualitative evaluation, I performed the lead coding and analysis and affirmed through the evaluation that structured data analysis yields answers to design deficits and solves for the user’s needs.
+    </p>
+    <p>
+Additionally, this project improved my collaborative, research, and analytical skills while demonstrating how effective empathy-driven design integrated with technology solves challenges in real-world application. It reinforced the iterative cycle on user-centered design.
     </p>
   </section>
-
+  
   <footer>
-    <p>Project 3 Social Extended Reality (XR) for Local Community - Design Diary</p>
+    <p>Project 3: Social Extended Reality (XR) for Local Community - Design Diary</p>
   </footer>
 </body>
 </html>
